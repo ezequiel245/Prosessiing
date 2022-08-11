@@ -1,0 +1,39 @@
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+   }
+   
+   #menu ul li {
+    background-color:#DC7633;
+   }
+   #cuadro{
+    border-radius: 1em 0em 0em 1em;
+   }
+   #imagen{
+       border-radius: 0em 1em 1em 0em;
+   }
+   
+   #menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"Tahoma", "Tahoma", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+   }
+   
+   #menu ul li {
+    position:top;
+    float:left;
+    margin:0;
+    padding:0;
+   }
+   
+   #menu ul li:hover {
+    background:#F0B27A;
+   }

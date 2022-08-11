@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <script src="processing.js"></script>
+    <title>Ejercicios processing</title>
+</head>
+<body>
+    <h1>Ejercicios processing</h1>    
+    <nav id="menu">
+      <ul>
+        <li  id= "cuadro"><a href="RectanguloRGB.html"> RectanguloRGB</a></li>
+        <li><a href="Pong.html"> Pong</a></li>
+        <li><a href="linea.html"> Linea</a></li>
+        <li><a href="iniciales.html"> Iniciales</a></li>
+        <li><a href="/index.html"> TrianguloRGB</a></li>
+        <li  id= "imagen"><a id= "hola" href="foto.html"> Imagen en movimiento</a></li>
+      </ul>
+      </nav>
+      </ul>
+     </nav>
+    <script type="text/processing">
+        PImage  imgen1;
+int Y= 220;
+int X= 380;
+void setup() {
+size (1000, 500);
+imgen1 = loadImage("img1.jpg");
+imgen1.resize(100,50);
+
+}
+void draw(){
+background(200);
+  image(imgen1,X,Y);
+
+}
+void keyPressed(){
+ 
+    if (keyCode == UP) {
+      Y = Y-5;
+    } else if (keyCode == DOWN) {
+      Y= Y+5;
+    } 
+  if(keyCode == LEFT){
+    X= X-5;
+  }else if (keyCode == RIGHT) {
+  X= X+5;
+  }
+}  
+      </script>
+      <canvas></canvas>
+</body>
+</html>

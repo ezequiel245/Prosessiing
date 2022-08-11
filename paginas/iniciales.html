@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <script src="processing.js"></script>
+    <title>Ejercicios processing</title>
+</head>
+<body>
+    <h1>Ejercicios processing</h1>    
+    <nav id="menu">
+      <ul>
+        <li  id= "cuadro"><a href="RectanguloRGB.html"> RectanguloRGB</a></li>
+        <li><a href="Pong.html"> Pong</a></li>
+        <li><a href="linea.html"> Linea</a></li>
+        <li><a href="/index.html"> inicio</a></li>
+        <li><a href="trianguloRGB.html"> TrianguloRGB</a></li>
+        <li  id= "imagen"><a id= "hola" href="foto.html"> Imagen en movimiento</a></li>
+      </ul>
+      </nav>
+      </ul>
+     </nav>
+    <script type="text/processing">
+        void setup() {
+            size(300,300);
+          }
+          void draw() {
+            background(255);
+            line(30, 30, 30,150);
+              line(30, 30, 100,30);
+               line(75, 85, 30,85);
+               line(100, 150, 30,150);
+               
+               line(250, 30, 170,30);
+                 line(170, 30, 170,150);
+                     line(250, 150, 170,150);
+                   line(250, 70, 250,150);
+                        line(170, 70, 250,70);
+          }
+      </script>
+      <canvas></canvas>
+</body>
+</html>

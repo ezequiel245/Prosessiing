@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <script src="processing.js"></script>
+    <title>Ejercicios processing</title>
+</head>
+<body>
+    <h1>Ejercicios processing</h1>    
+    <nav id="menu">
+      <ul>
+        <li  id= "cuadro"><a href="RectanguloRGB.html"> RectanguloRGB</a></li>
+        <li><a href="Pong.html"> Pong</a></li>
+        <li><a href="linea.html"> Linea</a></li>
+        <li><a href="iniciales.html"> Iniciales</a></li>
+        <li><a href="/index.html"> Volver</a></li>
+        <li  id= "imagen"><a id= "hola" href="foto.html"> Imagen en movimiento</a></li>
+      </ul>
+      </nav>
+      </ul>
+     </nav>
+    <script type="text/processing">
+        int P = 0;
+int P2 = 0;
+int P3 = 0;
+int R = 0;
+int G = 0;
+int B = 0;
+void setup(){ 
+size(640,360);
+}
+
+void draw(){
+
+  triangle(200,100,100,300,300,300);
+  fill(R,G,B);
+  if (P == 0){
+  R= R+5;
+  if (R==255){
+    P = 1;
+  }
+  }
+  if( P == 1){
+  R= R-5;
+    if(R == 0){
+  P= 2;
+  }
+  }
+  if (P==2){
+G= G+5;
+if(G==255){
+P=3;
+}
+}
+if(P==3){
+G= G-5;
+if(G==0){
+P= 4;
+}
+}
+
+if (P==4){
+B= B+5;
+if(B==255){
+P=4;
+}
+}
+if(P==4){
+B= B-5;
+if(B==0){
+P= 0;
+}
+}
+}
+   
+      </script>
+      <canvas></canvas>
+</body>
+</html>
